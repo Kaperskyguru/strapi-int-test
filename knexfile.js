@@ -43,7 +43,7 @@ module.exports = {
     },
   },
 
-  development: {
+  production: {
     client: process.env.DB_CLIENT || "postgresql",
     connection: {
       database: process.env.DB_DATABASE || "strapi_test_db",
