@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon  app.js",
-    "test": " jest --runInBand"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest --runInBand"
   },
   "author": "",
   "license": "ISC",

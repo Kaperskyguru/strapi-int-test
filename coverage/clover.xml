@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623621510709" clover="3.2.0">
-  <project timestamp="1623621510709" name="All files">
+<coverage generated="1623623141502" clover="3.2.0">
+  <project timestamp="1623623141503" name="All files">
     <metrics statements="88" coveredstatements="37" conditionals="46" coveredconditionals="6" methods="21" coveredmethods="11" elements="155" coveredelements="54" complexity="0" loc="88" ncloc="88" packages="4" files="6" classes="6"/>
     <package name="strapi-test">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
