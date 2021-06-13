@@ -12,17 +12,17 @@ const server = new ApolloServer({
   schema,
   introspection: true,
   playground: true,
-  //   context: ({ ctx }) => {
-  //     try {
-  //       const token = ctx.req.headers.authorization;
-  //       const user = jwt.verify(token, process.env.TOKEN_SECRET);
-  //       return {
-  //         user,
-  //       };
-  //     } catch (error) {
-  //       throw new AuthenticationError("You're are not authenticated");
-  //     }
-  //   },
+  context: ({ ctx }) => {
+    try {
+      const token = ctx.req.headers.authorization;
+      const user = jwt.verify(token, process.env.TOKEN_SECRET);
+      return {
+        user,
+      };
+    } catch (error) {
+      throw new AuthenticationError("You're are not authenticated");
+    }
+  },
 });
 
 module.exports = server;
