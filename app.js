@@ -7,7 +7,7 @@ const app = new Koa();
 app.use(bodyParser());
 app.use(server.getMiddleware());
 
-const koaServer = app.listen(3000, () => {
+const koaServer = app.listen(process.env.PORT, () => {
   console.log(`listening....at path ${server.graphqlPath}`);
 });
 
