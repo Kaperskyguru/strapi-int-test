@@ -10,6 +10,8 @@ const schema = makeExecutableSchema({
 
 const server = new ApolloServer({
   schema,
+  introspection: true,
+  playground: true,
   //   context: ({ ctx }) => {
   //     try {
   //       const token = ctx.req.headers.authorization;
