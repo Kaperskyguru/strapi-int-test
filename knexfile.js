@@ -43,20 +43,21 @@ module.exports = {
     },
   },
 
-  production: {
-    client: "postgresql",
+  development: {
+    client: process.env.DB_CLIENT || "postgresql",
     connection: {
-      database: "strapi_test_db",
-      user: "postgres",
-      password: "",
+      database: process.env.DB_DATABASE || "strapi_test_db",
+      user: process.env.DB_USER || "postgres",
+      password: process.env.DB_PASSWORD || "",
+      host: process.env.DB_HOST || "127.0.0.1",
     },
     pool: {
       min: 2,
       max: 10,
     },
     migrations: {
-      tableName: "knex_migrations",
       directory: path.join(BASE_PATH, "migrations"),
+      tableName: "knex_migrations",
     },
     seeds: {
       directory: path.join(BASE_PATH, "seeds"),
