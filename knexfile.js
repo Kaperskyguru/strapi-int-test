@@ -51,6 +51,9 @@ module.exports = {
       password: process.env.DB_PASSWORD || "",
       host: process.env.DB_HOST || "127.0.0.1",
     },
+    ssl: {
+      rejectUnauthorized: false,
+    },
     pool: {
       min: 2,
       max: 10,
