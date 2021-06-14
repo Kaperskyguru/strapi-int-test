@@ -1,0 +1,58 @@
+version: "3.5"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PACKAGE_PATH: api
+        WORKING_DIR: /usr/src/
+    expose:
+      - 8000
+    ports:
+      - 8000:8000
+    environment:
+      - NODE_ENV=development
+      - PORT=8000
+      - TOKEN_SECRET=mYsEcReT
+      - TOKEN=eyJhbGciOiJIUzI1NiJ9.c29sb21vbg.WsTPoPpKhR7fFW0KsfN0A3II5M_iKLPpbnV2OOJOKcc
+      - BASE_URL=api:8000
+    env_file:
+      - ./common.env
+    volumes:
+      - ./api:/usr/src
+    depends_on:
+      - postgres
+    command: ['npx', 'knex migrate:latest']
+    command: ['npx', 'knex seed:run']
+    command: ["npm", "start"]
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PACKAGE_PATH: frontend
+        WORKING_DIR: /usr/src/
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_ENV=development
+      - REACT_APP_BACKEND=http://api:8000/graphql
+      - NODE_PATH=/usr/src/
+      - REACT_APP_TOKEN=eyJhbGciOiJIUzI1NiJ9.c29sb21vbg.WsTPoPpKhR7fFW0KsfN0A3II5M_iKLPpbnV2OOJOKcc
+    env_file:
+      - ./common.env
+    volumes:
+      - ./frontend:/usr/src
+    depends_on:
+      - api
+    command: ["npm", "start"]
+
+  postgres:
+    image: postgres
+    restart: always
+    env_file: ./common.env

@@ -4,11 +4,13 @@ const BASE_PATH = path.join(__dirname, "src");
 
 module.exports = {
   development: {
-    client: "postgresql",
+    client: process.env.DB_CLIENT || "postgresql",
     connection: {
-      database: "strapi_test_db",
-      user: "postgres",
-      password: "",
+      database: process.env.POSTGRES_DB || "strapi_test_db",
+      user: process.env.POSTGRES_USER || "postgres",
+      password: process.env.POSTGRES_PASSWORD || "",
+      host: process.env.POSTGRES_HOST || "127.0.0.1",
+      port: process.env.POSTGRES_PORT || "5432",
     },
     pool: {
       min: 2,
@@ -46,10 +48,11 @@ module.exports = {
   production: {
     client: process.env.DB_CLIENT || "postgresql",
     connection: {
-      database: process.env.DB_DATABASE || "strapi_test_db",
-      user: process.env.DB_USER || "postgres",
-      password: process.env.DB_PASSWORD || "",
-      host: process.env.DB_HOST || "127.0.0.1",
+      database: process.env.POSTGRES_DB || "strapi_test_db",
+      user: process.env.POSTGRES_USER || "postgres",
+      password: process.env.POSTGRES_PASSWORD || "",
+      host: process.env.POSTGRES_HOST || "127.0.0.1",
+      port: process.env.POSTGRES_PORT || "5432",
       ssl: {
         rejectUnauthorized: false,
       },

@@ -1,0 +1,37 @@
+.MuiInput-underline:before {
+  content: "" !important;
+  position: relative !important;
+}
+
+.MuiInput-underline:after {
+  content: "";
+  border-bottom: unset !important;
+}
+
+.makeStyles-input-37 {
+  background-color: transparent !important;
+}
+
+.MuiInputLabel-formControl {
+  transform: unset !important;
+}
+.MuiFormLabel-root {
+  display: block !important;
+  color: #121C33 !important;
+  font-family: 'poppins, sans-serif';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.MuiInputBase-input {
+  background: #F5F5F5 !important;
+  border-radius: 8px !important;
+  margin-top: 10px !important;
+  padding: 10px !important;
+}
+
+.makeStyles-input-123 {
+  background-color: unset !important;
+}
