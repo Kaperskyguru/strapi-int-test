@@ -2,11 +2,6 @@ const path = require("path");
 
 const BASE_PATH = path.join(__dirname, "src");
 
-if (env && env === "production") {
-  const pg = require("pg");
-  pg.defaults.ssl = true;
-}
-
 module.exports = {
   development: {
     client: "postgresql",
