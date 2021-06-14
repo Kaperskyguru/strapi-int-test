@@ -50,8 +50,9 @@ module.exports = {
       user: process.env.DB_USER || "postgres",
       password: process.env.DB_PASSWORD || "",
       host: process.env.DB_HOST || "127.0.0.1",
+      ssl: true,
     },
-    ssl: true,
+
     pool: {
       min: 2,
       max: 10,
