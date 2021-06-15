@@ -2,6 +2,8 @@ require("dotenv").config();
 import "cross-fetch/polyfill";
 import Helpers from "../utils/Helpers";
 
+afterAll(() => setTimeout(() => process.exit(), 1000));
+
 describe("Tests the Helpers", () => {
   it("should test correct ISO date format", () => {
     expect(Helpers.isIsoDate("1970-01-01T00:00:00Z")).toBe(true);

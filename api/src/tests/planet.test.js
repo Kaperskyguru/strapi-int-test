@@ -7,6 +7,8 @@ import Planet from "../models/Planet";
 const authClient = getClient(process.env.TOKEN);
 const client = getClient();
 
+// afterAll(() => setTimeout(() => process.esxit(), 1000));
+
 describe("Tests the Planet", () => {
   it("should create a new planet", async () => {
     const createPlanet = gql`
@@ -16,7 +18,7 @@ describe("Tests the Planet", () => {
             name: "Test 6"
             description: "This is a test Planet"
             code: "AA-AAA-12"
-            pictureUrl: "This is a URL"
+            pictureUrl: "https://static.wikia.nocookie.net/starwars/images/d/df/MalastareNEGAS.jpg"
           }
         ) {
           name

@@ -5,7 +5,8 @@ import { getClient } from "../utils/client";
 import Character from "../models/Character";
 
 const authClient = getClient(process.env.TOKEN);
-const client = getClient();
+
+// afterAll(() => setTimeout(() s=> process.exit(), 1000));
 
 describe("Tests the Character", () => {
   it("should successfully create a character", async () => {
@@ -15,7 +16,7 @@ describe("Tests the Character", () => {
           characterInfo: {
             name: "TEST"
             description: "This is a test description"
-            pictureUrl: "This is a URL"
+            pictureUrl: "https://images.unsplash.com/photo-1588422333078-44ad73367bcb"
             bornAt: "1970-01-01T00:00:00Z"
             planet: "AA-AAA-11"
           }
