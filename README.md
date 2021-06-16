@@ -38,6 +38,18 @@ The Frontend is build with `create-react-app` boilerplate so more instructions c
 
 - `npm start` to start the development server.
 
+## To run with Docker (Recommended)
+
+Set up and install Docker and Docker compose
+
+- `cd` into the `Test` folder.
+
+- Type `docker compose up` to deploy the project.
+
+- Or `docker-compose up` to use Docker Compose directly.
+
+- The application will be served at `http://localhost:3000/`
+
 If everything is properly configured, you should be presented with a fullstack GraphQL application.
 
 If there is any question, I will be available to discuss it in details.
