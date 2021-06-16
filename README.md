@@ -42,8 +42,6 @@ The Frontend is build with `create-react-app` boilerplate so more instructions c
 
 Set up and install Docker and Docker compose
 
-- `cd` into the `Test` folder.
-
 - Type `docker compose up` to deploy the project.
 
 - Or `docker-compose up` to use Docker Compose directly.
