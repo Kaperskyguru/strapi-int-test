@@ -16,6 +16,9 @@ class Character {
     if (birthDate && !Helper.isIsoDate(birthDate)) {
       throw new Error("Birth Date must be in this format (e.g 1970-01-01)");
     }
+
+    //TODO: Query by planet
+
     try {
       return await Knex(table)
         .offset(page)

@@ -12,14 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "@koa/router": "^10.0.0",
-    "@wiicamp/graphql-validation": "^2.2.3",
     "apollo-server-koa": "^2.25.0",
     "class-validator": "^0.13.1",
     "dotenv": "^10.0.0",
-    "env-cmd": "^10.1.0",
-    "esm": "^3.2.25",
     "graphql": "^15.5.0",
-    "graphql-constraint-directive": "^2.1.1",
     "graphql-scalars": "^1.10.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.95.6",
@@ -27,8 +23,7 @@
     "koa-bodyparser": "^4.3.0",
     "koa-jwt": "^4.0.1",
     "pg": "^8.6.0",
-    "reflect-metadata": "^0.1.13",
-    "type-graphql": "^1.1.1"
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",

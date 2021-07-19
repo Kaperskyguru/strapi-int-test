@@ -1,6 +1,6 @@
 # Instructions
 
-The project folder contains two folders, `br` for the Backend and `fr` for the Frontend. Each folder is a standalone application but the Frontend depends on the Backend API.
+The project folder contains two folders, `be` for the Backend and `fr` for the Frontend. Each folder is a standalone application but the Frontend depends on the Backend API.
 
 The Backend application uses a `postgres` database which you can install and input the credentials in the `.env` file of the Backend folder.
 
@@ -12,11 +12,9 @@ Additionaly, the `.env.sample` file shows you the structure of the `.env` file a
 
 To manually run the project, follow these steps:
 
-- `cd` into the `br` folder.
+- `cd` into the `be` folder.
 
 - `npm install` to install the all the Backend dependencies.
-
-- `npm install knex -g` to install Knex CLI globally.
 
 - `npx knex migrate:latest` to migrate the database if configured successfully.
 

@@ -1,4 +1,3 @@
-require("dotenv").config();
 import "cross-fetch/polyfill";
 import Helpers from "../utils/Helpers";
 

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623765991461" clover="3.2.0">
-  <project timestamp="1623765991463" name="All files">
-    <metrics statements="91" coveredstatements="29" conditionals="74" coveredconditionals="21" methods="21" coveredmethods="6" elements="186" coveredelements="56" complexity="0" loc="91" ncloc="91" packages="4" files="6" classes="6"/>
-    <package name="src">
-      <metrics statements="3" coveredstatements="3" conditionals="24" coveredconditionals="12" methods="0" coveredmethods="0"/>
-      <file name="knexfile.js" path="/usr/src/knexfile.js">
-        <metrics statements="3" coveredstatements="3" conditionals="24" coveredconditionals="12" methods="0" coveredmethods="0"/>
+<coverage generated="1624015248984" clover="3.2.0">
+  <project timestamp="1624015248984" name="All files">
+    <metrics statements="91" coveredstatements="38" conditionals="74" coveredconditionals="33" methods="21" coveredmethods="11" elements="186" coveredelements="82" complexity="0" loc="91" ncloc="91" packages="4" files="6" classes="6"/>
+    <package name="api">
+      <metrics statements="3" coveredstatements="3" conditionals="24" coveredconditionals="24" methods="0" coveredmethods="0"/>
+      <file name="knexfile.js" path="/Users/solomon/Documents/workspace/JSProjects/strapi-test/api/knexfile.js">
+        <metrics statements="3" coveredstatements="3" conditionals="24" coveredconditionals="24" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.src.config">
+    <package name="api.src.config">
       <metrics statements="7" coveredstatements="5" conditionals="6" coveredconditionals="4" methods="0" coveredmethods="0"/>
-      <file name="database.js" path="/usr/src/src/config/database.js">
+      <file name="database.js" path="/Users/solomon/Documents/workspace/JSProjects/strapi-test/api/src/config/database.js">
         <metrics statements="7" coveredstatements="5" conditionals="6" coveredconditionals="4" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="cond" truecount="1" falsecount="1"/>
@@ -24,10 +24,10 @@
         <line num="11" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.src.models">
-      <metrics statements="69" coveredstatements="11" conditionals="38" coveredconditionals="0" methods="16" coveredmethods="1"/>
-      <file name="Character.js" path="/usr/src/src/models/Character.js">
-        <metrics statements="38" coveredstatements="5" conditionals="21" coveredconditionals="0" methods="9" coveredmethods="0"/>
+    <package name="api.src.models">
+      <metrics statements="69" coveredstatements="20" conditionals="38" coveredconditionals="0" methods="16" coveredmethods="6"/>
+      <file name="Character.js" path="/Users/solomon/Documents/workspace/JSProjects/strapi-test/api/src/models/Character.js">
+        <metrics statements="38" coveredstatements="12" conditionals="21" coveredconditionals="0" methods="9" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -45,13 +45,13 @@
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
         <line num="66" count="0" type="stmt"/>
         <line num="67" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -67,8 +67,8 @@
         <line num="84" count="0" type="stmt"/>
         <line num="89" count="1" type="stmt"/>
       </file>
-      <file name="Planet.js" path="/usr/src/src/models/Planet.js">
-        <metrics statements="31" coveredstatements="6" conditionals="17" coveredconditionals="0" methods="7" coveredmethods="1"/>
+      <file name="Planet.js" path="/Users/solomon/Documents/workspace/JSProjects/strapi-test/api/src/models/Planet.js">
+        <metrics statements="31" coveredstatements="8" conditionals="17" coveredconditionals="0" methods="7" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -83,8 +83,8 @@
         <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
@@ -102,9 +102,9 @@
         <line num="79" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.src.utils">
+    <package name="api.src.utils">
       <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="5"/>
-      <file name="Helpers.js" path="/usr/src/src/utils/Helpers.js">
+      <file name="Helpers.js" path="/Users/solomon/Documents/workspace/JSProjects/strapi-test/api/src/utils/Helpers.js">
         <metrics statements="8" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -115,7 +115,7 @@
         <line num="9" count="0" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
-      <file name="client.js" path="/usr/src/src/utils/client.js">
+      <file name="client.js" path="/Users/solomon/Documents/workspace/JSProjects/strapi-test/api/src/utils/client.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
